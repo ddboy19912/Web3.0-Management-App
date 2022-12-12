@@ -173,6 +173,7 @@ const Home = () => {
               placeholder="Role Type"
               onChange={createRoleType}
               className="form"
+              data-cy="roleType-Input"
             />
             <Button
               backgroundColor="#D6517D"
@@ -183,7 +184,11 @@ const Home = () => {
               fontFamily="inherit"
               padding="15px"
               margin="0 15px"
+              data-cy="roleType-Input"
               onClick={submitRole}
+              _hover={{
+                opacity: 0.9,
+              }}
             >
               Create RoleType
             </Button>
@@ -238,8 +243,9 @@ const Home = () => {
             height="3rem"
             onClick={handleAssign}
             mt="1rem"
-
-            // isDisabled={!validation}
+            _hover={{
+              opacity: 0.9,
+            }}
           >
             Assign Role to Agent
           </Button>
@@ -299,6 +305,9 @@ const Home = () => {
                 width={isMobile ? '100%' : '50%'}
                 height="3rem"
                 onClick={handleRoleSubmit}
+                _hover={{
+                  opacity: 0.9,
+                }}
               >
                 Change Agent Status
               </Button>
@@ -333,6 +342,9 @@ const Home = () => {
               padding="15px"
               margin="0 15px"
               onClick={() => setShowRoles(!showRoles)}
+              _hover={{
+                opacity: 0.9,
+              }}
             >
               Show Roles
             </Button>
@@ -363,6 +375,9 @@ const Home = () => {
               padding="15px"
               margin="0 15px"
               onClick={() => setShowMembers(!showMembers)}
+              _hover={{
+                opacity: 0.9,
+              }}
             >
               Show Members
             </Button>
