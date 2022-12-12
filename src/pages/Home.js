@@ -321,8 +321,8 @@ const Home = () => {
         </Box>
         <Box>
           <Heading lineHeight="3rem">
-            And there are currently {uniqueMembersLength}
-            Agents(Members) available
+            And there are currently {uniqueMembersLength} Agents(Members)
+            available
           </Heading>
         </Box>
         <Box>
